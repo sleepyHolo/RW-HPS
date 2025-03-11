@@ -1,95 +1,102 @@
-## Language(语言)  
-
-[跳转中文介绍](https://github.com/deng-rui/RW-HPS/blob/master/README-CN.md)  
+# 仓库说明
+此仓库用于构建**自用**RW-HPS, 原仓库: https://github.com/deng-rui/RW-HPS  
+此仓库内文件可能与原仓库不一致, 因为是**个人**使用.  
+以下为原仓库中文文档(不想看英文所以我把英文文件删了):  
 
 # RW-HPS  
-Third party rust war server  
-This is a netty based server  
-It aims to provide better game experience for players as a high performance and high availability server  
+第三方铁锈战争服务器  
+这是一个基于Netty的服务器  
+旨在作为一个高性能 高可用的服务器 为玩家提供更好的游戏体验
 
 ### Licenses
-Used in this project  
+本服务端遵守  
 GNU General Public License v3.0
 
-#### Game protocols that will not be supported
-- Server List -> ADD List, Update List, Remove List  
-- Money related, such as value-added services  
+#### 不会支持的游戏协议
+- 列表相关，如ADD List, Update List, Remove List  
+- 金钱相关，如增值服务    
 
-**All development is for learning, do not use for illegal purposes** 
+**一切开发旨在学习，请勿用于非法用途**  
 
-`RW-HPS` is open sourced under the `GPLv3` agreement. For the healthy development of the entire community，We **highly recommended**you do the following：
+`RW-HPS` 采用 `GPLv3` 协议开源。为了整个社区的良性发展，我们**强烈建议**您做到以下几点：
 
-- **Indirect contact (including but not limited to using `Http API` or cross-process technology and bytecode modification) to `RW-HPS` software using `GPLv3` open source**
-- **For personal use, please join the server to use from RW-HPS**
-- **Do not encourage, do not support all commercial use*
+- **间接接触（包括但不限于使用 `Http API` 或 跨进程技术 以及字节码修改）到 `RW-HPS` 的软件使用 `GPLv3` 开源**
+- **个人使用请加入服务端使用自RW-HPS**
+- **不鼓励，不支持一切商业使用**
 
-### Derivative software needs to declare and quote
+### 衍生软件需声明引用
 
-- If the software package released by RW-HPS is quoted without modifying RW-HPS, the derivative project shall mention the use of RW-HPS in any part of the description。
-- If the RW-HPS source code is modified and then released，**Or refer to the internal implementation of RW-HPS to release another project**，Then the derivative project must be**article head**or 'RW-HPS' related information**first Appearance**s position**clearly stated**from This Warehouse (`https://github.com/deng-rui/RW-HPS`)。Don’t distort or hide the fact that it’s free and open source。
+- 若引用 RW-HPS 发布的软件包而不修改 RW-HPS，则衍生项目需在描述的任意部位提及使用 RW-HPS。
+- 若修改 RW-HPS 源代码再发布，**或参考 RW-HPS 内部实现发布另一个项目**，则衍生项目必须在**文章首部**或 'RW-HPS' 相关内容**首次出现**的位置**明确声明**来源于原仓库 (`https://github.com/deng-rui/RW-HPS`)。不得扭曲或隐藏免费且开源的事实。
 
+## 开始
+- 开发文档: [docs](docs/README.md)
+- 更新日志: [release](https://github.com/deng-rui/RWHPS/releases)
+- 开发计划: [milestones](https://github.com/deng-rui/RWHPS/milestones)
+- 讨论:
+  > 在 GitHub Discussions 提出的问题会收到回复, 也欢迎分享你基于项目的新想法.  
+  > 邮件联系 RW-HPS@der.kim  
 
-## Start
-- Development documentation: [docs](docs/README.md)  
-- Update log: [release](https://github.com/deng-rui/RWHPS/releases)  
-- Development plan: [milestones](https://github.com/deng-rui/RWHPS/milestones)  
-- Discuss:
-  > Questions raised in GitHub discussions will be answered, and you are welcome to share your new ideas based on the project.  
-  > Email contact : RW-HPS@der.kim  
+### 我们被谁使用
+- Tiexiu.xyz
+    - (new) [rw.tiexiu.xyz](https://rw.tiexiu.xyz)  
+    - (old) [sfe.tiexiu.xyz](https://sfe.tiexiu.xyz)  
+- 非官方RELAYCN
+    - RelayCN Unofficial relay.der.kim
 
-## Construction
-1. Install JDK 11 +. If you don't know how to do it, check it out.  
-2. Run "gradlew jar"  
-3. Your jar will be in the 'build/libs' directory  
-4. Run your jar to experience high performance server.  
+## 构建
+1.安装JDK 11+。如果你不知道怎么做，就去查.  
+2.运行“gradlew jar”  
+3.您的jar将位于'build/libs'目录中.  
+(附注/server/build/libs/)  
+4.运行您的Jar,体验高性能服务器 
 
-## Run
+## 运行配置
 
-| Configure 		| CPU             | RAM 	| SYSTEM 			| Disk 	| Java      |
+| 配置 		| CPU             | 内存 	| 系统 			| 硬盘大小 	| Java      |
 |:--- 		|:---             |:---     |:---           |:---       |:---       |
-| Currently Allocated 	| BCM2711         | 4G      | Ubuntu 19.10  | 500 HDD  | Java 11   |
-| Minimum Configuration 	| ARMv7 Processor rev 5  | 64M      | Linux~  | 64M HDD  | Java 11   |
+| 当前配置 	| BCM2711         | 4G      | Ubuntu 19.10  | 500 HDD  | Java 11   |
+| 最低配置 	| ARMv7 Processor rev 5  | 64M      | Linux~  | 64M HDD  | Java 11   |
 
-## Mark Setup
+## 构建配置
 
-| Configure 		| CPU             | RAM 	| SYSTEM 			| Disk 	| Java      | Gradle    |
+| 配置 		| CPU             | 内存 	| 系统 			| 硬盘大小 	| Java      | Gradle    |
 |:--- 		|:---             |:--- 	|:--- 			|:---      	|:---       |:---       |
-| Currently Allocated 	| BCM2711         | 4G 		| Ubuntu 19.10 	| 500G HDD 	| Java 11    | 6.2.2     |
+| 当前配置 	| BCM2711         | 4G 		| Ubuntu 19.10 	| 500G HDD 	| Java 11    | 6.2.2     |
 
-## Server Command List
-
-| Command 					 | Parameter 																						 | Information 									 |
+## 服务器命令列表
+| 命令 					 | 参数 																						 | 信息 									 |
 |:--- 					 |:--- 																						 |:--- 									 |
-| help 		              |                                                  										 | Get help 		 |
-| start                  |                                                  										 | Turn on the server 						 |
-| say 		      | &lt;TEXT&gt;                                                  										 | Send messages in the name of Server 				 |
-| giveadmin                | &lt;PlayerSerialNumber&gt; 																 | Transfer Admin       		         |
-| restart 			 | 																							 | Restart server 				 |
-| gameover 				 |  	 | Restart The Game               				 |
-| clearbanip          		 |                                                  										 | Clean up the banned IP               	 |
-| admin          		 |&lt;add/remove&gt; &lt;PlayerSite&gt;                                                  										 | Set up admin               			 |
-| clearbanuuid          		 |                               	   											 | Clear banned uuid               			 |
-| clearbanall          		 |                               	   											 | Empty ban               			 |
-| ban          		 | &lt;PlayerSerialNumber&gt;                                 	   											 | Ban someone               			 |
-| mute          		 |  &lt;PlayerSerialNumber&gt;  &lt;Time/s&gt;                             	   											 | Clear banned uuid               			 |
-| kick          		 |  &lt;PlayerSerialNumber&gt;  &lt;Time/s&gt;                             	   											 | Kick               			 |
-| isafk          		 |  &lt;off/on&gt;                             	   											 | Whether to enable AFK               			 |
-| plugins          		 |                               	   											 | View the list of plugins               			 |
-| players          		 |                               	   											 | View player list               			 |
-| kill          		 | &lt;PlayerSerialNumber&gt;                             	   											 | Kill the player               			 |
-| clearmuteall          		 |                               	   											 | Unmute all               			 |
-| maps          		 |                               	   											 | View Custom Map               			 |
-| stop          		 |                               	   											 | Stop the server               			 |
+| help 		              |                                                  										 | 获取帮助 		 |
+| start                  |                                                  										 | 开启服务器 						 |
+| say 		            | &lt;文字&gt;                                                  								| 用Server的名义发消息 				 |
+| giveadmin              | &lt;玩家位置&gt; 																            | 转移Admin       		         |
+| restart 			      | 																						| 重启服务器 				  |
+| gameover 				 |  	                                                                                    | 重新开始游戏               				 |
+| clearbanip          		 |                                                  										 | 清理被ban的ip               	 |
+| admin          		 |&lt;add/remove&gt; &lt;PlayerSite&gt;                                                  										 | 设置admin               			 |
+| clearbanuuid          		 |                               	   											 | 清除被ban的uuid               			 |
+| clearbanall          		 |                               	   											 | 清空ban               			 |
+| ban          		 | &lt;PlayerSerialNumber&gt;                                 	   											 | 禁止某人               			 |
+| mute          		 |  &lt;PlayerSerialNumber&gt;  &lt;Time/s&gt;                             	   											 | 清除被ban的uuid               			 |
+| kick          		 |  &lt;PlayerSerialNumber&gt;  &lt;Time/s&gt;                             	   											 | 踢出               			 |
+| isafk          		 |  &lt;off/on&gt;                             	   											 | 是否启用AFK               			 |
+| plugins          		 |                               	   											 | 查看插件列表               			 |
+| players          		 |                               	   											 | 查看玩家列表               			 |
+| kill          		 | &lt;PlayerSerialNumber&gt;                              	   											 | 杀死玩家               			 |
+| clearmuteall          		 |                               	   											 | 取消全部禁言               			 |
+| maps          		 |                               	   											 | 查看Custom Map               			 |
+| stop          		 |                               	   											 | 停止服务器               			 |
 
 
-## Game Command List
+## 游戏命令列表
 
-| Command 			| Parameter 												 | Information 										 |
+| 命令 			| 参数 												 | 信息 										 |
 |:---           |:--- 												 |:--- 										 |
-| help      |   | Get help 									 |
+| help      |   | 获取帮助 									 |
 
-### Thanks  
-@Miku Inspiration from Rukkit project  
-@Tiexiu.xyz Provide computing support  
-@Aunken ARC/Mindustry The project provides the underlying vision  
-@Apache org.apache.tools.zip  
+### 鸣谢  
+@Miku 的RUKKIT项目带来的启发  
+@Tiexiu.xyz 提供计算支持  
+@Aunken 的ARC/Mindustry项目提供底层设想  
+@Apache 的org.apache.tools.zip
